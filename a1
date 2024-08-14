@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a[10],i,n;
+    cout<<"Enter size";
+    cin>>n;
+    cout<<"Enter Array :: ";
+    for(i=0;i<n;i++){
+    cin>>a[i];
+    }
+    int h,l,mid,c;
+    l=c=0;
+    h=n-1;
+    mid=(l+h)/2;
+    i=mid;
+    while(i<=h){
+      if(a[i]==0){
+        c++;
+        i++;
+      }
+      else{
+        i++;
+      }
+    }
+    cout<<"NO. OF ZEROS "<<c;
+
+return 0;
+
+}
